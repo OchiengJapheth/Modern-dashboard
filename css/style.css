@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+}
+
+
+.side-bar{
+position: sticky;
+top: 0;
+left: 0;
+bottom: 0;
+width: 110px;
+height: 100vh;
+padding: 0 1.7rem;
+overflow: hidden;
+transition:all 0.5s linear;
+background-color: #0f5132;
+}
+
+.side-bar:hover{
+  width: 230px;
+  transition: 0.5s;
+}
+
+.logo{
+ height: 60px;
+ padding: 16px;
+}
+
+.main {
+  height: 88%;
+  position: relative;
+  padding: 0;
+
+}
+
+.main li {
+  padding: 1rem;
+  list-style: none;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main li:hover{
+background-color: #fff;
+}
+
+.main li a {
+  text-decoration: none;
+  color: #d4af37;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main a:hover{
+  color: #000;
+}
+
+.main a span {
+  overflow: hidden;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%; 
+}
+
+/* ---- Main body Section --- */
+.main--content {
+  position: relative;
+  background-color: #e0dede;
+  cursor: pointer;
+  width: 100%;
+}
+
+.header--wrapper img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem; 
+}
+
+.header-title{
+  color: #0f5132;
+}
+
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search--box {
+  background-color: rgb(237, 237, 237);
+  border-radius: 15px ;
+  color: rgb(133, 99, 186, 255);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+}
+
+.search--box input {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.search--box i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.search--box i:hover {
+  transform: scale(1.2);
+}
+
+/* ---- card container ---- */
+
+.card--container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  
+}
+
+.card--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main--title {
+  color: #c39910;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.payment--card {
+  background: rgb(229, 223, 223);
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 290px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+
+}
+
+/* --- border decoration ---*/
+.red--card {
+    border-left: 7px solid red;
+}
+
+.purple--card {
+    border-left: 7px solid purple;
+}
+
+.green--card {
+    border-left: 7px solid green;
+}
+
+.blue--card {
+    border-left: 7px solid blue;
+}
+
+.payment--card:hover {
+  transform: translateY(-5px);
+}
+
+.card--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 200;
+}
+ 
+.amount--value {
+  font-size: 24px;
+  font-family: vivaldi;
+  font-weight: 600;
+}
+
+.icon {
+  color: #fff;
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1,5rem;
+  background-color: red;
+}
+
+.card--detail {
+  font-size: 18px;
+  color: #37373777;
+  letter-spacing: 2px;
+  font-family:vivaldi ;
+}
+
+/* css color */
+.light-red {
+   background-color: rgb(252, 225, 232);
+}
+
+.light-purple {
+   background-color: rgb(250, 201, 250);
+}
+
+.light-green {
+   background-color: rgb(235, 254, 235);
+}
+
+.light-blue {
+   background-color: rgb(236, 236, 254);
+}
+
+.dark-red {
+  background-color: red;
+}
+
+.dark-blue {
+  background-color: blue;
+}
+
+.dark-green {
+  background-color: green;
+}
+
+.dark-purple {
+  background-color: purple;
+}
+
+.tabuler--wrapper {
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding:2rem ;
+}
+
+.table--container {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+thead , tfoot {
+  background-color:#038347;
+}
+
+th {
+  padding: 12px 6px;
+  text-align: left;
+}
+
+tr td{
+  border-bottom: 1px solid;
+  padding:12px 6px;
+}
+
+tbody tr:hover {
+  background-color: #f1f3f5; 
+  transition: background-color 0.2s ease;
+}
+
+tr:nth-child(even) {
+  background-color: #fad975;
+}
+
+tfoot td{
+  width: 100%;
+  font-weight: 600;
+}
